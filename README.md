@@ -1,2 +1,2 @@
-# YogeshKumarGarg
+# Yogesh-Kumar-Garg
 Assignments
