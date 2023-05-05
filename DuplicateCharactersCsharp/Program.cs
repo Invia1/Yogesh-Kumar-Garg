@@ -11,7 +11,7 @@ namespace DuplicateCharactersCsharp
         static void Main(string[] args)
         {
 
-            // --without dictionary-------- -
+         
             int count = 0;
             Console.WriteLine("Enter a name::");
             string name = Console.ReadLine();
