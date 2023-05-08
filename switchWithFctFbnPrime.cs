@@ -74,7 +74,7 @@ namespace SwitchwithFact_Fbn_Prime
                         Console.WriteLine("please enter a valid value");
                         goto label;
                         
-                        break;
+                       
                     }
                     }
                 Console.WriteLine("if you want to restart the program than type 'yes'");
