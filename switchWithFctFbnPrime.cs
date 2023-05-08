@@ -31,24 +31,19 @@ namespace SwitchwithFact_Fbn_Prime
 
                     case 2:
                     {
-                        Console.WriteLine("enter a number where up to u want to be print fibonacci series:");
-                        int number2=Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("\n\n");
-                         int fib(int a)
-                        {
-                            if (a > 1)
-                                return fib(a - 1) + fib(a - 2);
-                            else if (a == 1)
-                                return 1;
-                            else
-                                return 0;
-                        }
-                        for (int i = 1; i <= number2; i++)
-                        {
-                            Console.WriteLine(fib(i));
+                        Console.WriteLine("enter a number where up to u want to print fibonacci series");
+            int number2=Convert.ToInt32(Console.ReadLine());
 
-                        }
-                        Console.WriteLine("Thank You");
+
+            int n1=1, n2=0,fbn=1;
+            for (int i = 0; i < number2; i++)
+            {
+                fbn = n1 + n2;
+                n1= n2;
+                n2 = fbn;
+                Console.Write(fbn+"\t");
+            }
+                        Console.WriteLine("\nThank You");
                         break;
                     }
                 case 3:
