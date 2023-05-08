@@ -7,6 +7,8 @@ namespace SwitchwithFact_Fbn_Prime
     {
         static void Main(string[] args)
         {
+            string reply;
+            do{
             Console.WriteLine("press 1 for fact\n press 2 for fibonacci \n press 3 for prime number");
             int n=Convert.ToInt32(Console.ReadLine());
             
@@ -69,12 +71,17 @@ namespace SwitchwithFact_Fbn_Prime
                     default:
                     {
                         Console.WriteLine("please enter a valid value");
-                        n= Convert.ToInt32(Console.ReadLine());
+                        
                         
                         break;
                     }
+                    }
+                Console.WriteLine("if you want to restart the program than type 'yes'");
+                reply = Console.ReadLine();
+            } while (reply.ToLower() == "yes");
+
                    
-            }
+            
            
             Console.ReadLine();
         }
