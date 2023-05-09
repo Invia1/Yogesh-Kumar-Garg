@@ -33,7 +33,7 @@ namespace assignment
             set
             {
                 _amount = value;
-                if (_amount > 1000)
+                if (_amount >= 10000)
                 {
                     Console.WriteLine("you can shopping..........Enjoy");
                 }
@@ -56,7 +56,7 @@ namespace assignment
             Console.WriteLine("enter your name:");
             obj1.PName = Console.ReadLine();
 
-            Console.WriteLine("enter amount");
+            Console.WriteLine("enter Your account balance:");
             obj1.Amount = Convert.ToDouble(Console.ReadLine());
 
 
